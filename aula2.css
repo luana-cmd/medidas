@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    padding: 50px;
+    background-color: deepskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2 {
+font-size: 30px;
+color: white;
+}
+
+
+
+.sessão-1 {
+    padding: 70px;
+    background-color: red;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.sessão-1 h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.sessão-1 .div-pai {
+  display: flex;
+  gap: 25px;
+}
+
+.sessão-1 .caixa {
+    padding: 25px;
+    background-color: white;
+    margin-top: 35px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+.sessão-2 {
+    padding: 70px;
+    background-color: green;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.sessão-2 h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.sessão-2 .div-pai {
+  display: flex;
+  gap: 25px;
+}
+
+.sessão-2 .caixa {
+    padding: 25px;
+    background-color: white;
+    margin-top: 35px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+.sessão-3 {
+    padding: 70px;
+    background-color: yellow;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.sessão-3 h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.sessão-3 .div-pai {
+  display: flex;
+  gap: 25px;
+}
+
+.sessão-3 .caixa {
+    padding: 25px;
+    background-color: white;
+    margin-top: 35px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/*  */
+
