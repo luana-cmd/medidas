@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    /*distancia de uma linha p outra*/
+}
+
+header {
+    background-color: rgb(236, 151, 165);
+    color: white;
+    padding: 1rem;
+    /*padding rem para consistancia com o tamanho da fonte raiz*/
+    text-align: center;
+}
+
+.main-content {
+    padding: 2rem;
+    /*espaçamento interno da área principal*/
+    color: #3498db;
+}
+
+.section-1 {
+    padding: 2em; /*padding em, relativo ao tamanho da fonte do pai*/
+    margin-bottom: 2em; /*espaço abaixo de cada seção*/
+    border-radius: 8px;
+    position: relative; /**/
+}
+
+.section-1 {
+    background-color: pink;
+    color: white;
+}
+
+
+.section-2 {
+    padding: 2em; /*padding em, relativo ao tamanho da fonte do pai*/
+    margin-bottom: 2em; /*espaço abaixo de cada seção*/
+    border-radius: 8px;
+    position: relative; /**/
+}
+
+.section-2 {
+    background-color: palevioletred;
+    color: white;
+}
+
+.section-3 {
+    padding: 2em; /*padding em, relativo ao tamanho da fonte do pai*/
+    margin-bottom: 2em; /*espaço abaixo de cada seção*/
+    border-radius: 8px;
+    position: relative; /**/
+}
+
+.section-3 {
+    background-color: deeppink;
+    color: white;
+}
+
+.box {
+    background-color: white;
+    color: black;
+    padding: 2rem; /*padding aumentado para maior legibilidade*/
+    margin: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem; /*tamanho da fonte*/
+    box-sizing: border-box; /*inclui padding e borda no cálculo da largura*/
+}
+
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+    width: calc(50% - 2rem); /*largura das caixas ajustada para caber duas por linhas com o espaçamento*/
+    float: left; /*trabalha com a distruição dos elementos ...*/
+}
+
+.section::after {
+    content: ""; /*adiciona um elemento invisível após o conteúdo da sessão*/
+    display: table; /*faz com que o elemento invisível se comporte como um bloco, forçando o contéiner a incluir elementos flutuantes*/
+    clear: both; /*garante que o contéiner, evitando problemas de layount*/
+}
+
+/*responsividade*/
+
+/*ajuste para telas grandes (largura acima de 1200px*/
+@media (min-width: 1200px) {
+    .box {
+        width: calc(33.333% - 2rem); /*largura do 33.333% para tres caixas por linhas*/
+    }
+}
+

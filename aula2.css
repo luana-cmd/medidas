@@ -3,8 +3,6 @@
     padding: 0;
 }
 
-
-
 header {
     padding: 50px;
     background-color: deepskyblue;
@@ -17,8 +15,6 @@ header h2 {
 font-size: 30px;
 color: white;
 }
-
-
 
 .sessão-1 {
     padding: 70px;
@@ -46,8 +42,6 @@ color: white;
     text-align: center;
 }
 
-
-
 .sessão-2 {
     padding: 70px;
     background-color: green;
@@ -74,8 +68,6 @@ color: white;
     text-align: center;
 }
 
-
-
 .sessão-3 {
     padding: 70px;
     background-color: yellow;
@@ -101,7 +93,3 @@ color: white;
     border-radius: 10px;
     text-align: center;
 }
-
-
-/*  */
-
