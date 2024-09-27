@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*garante que o preenchimento/padding seja incluido no cálculo da largura, evitando que o conteúdo ultrapasse a tela*/
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    padding: min(5vh, 4rem);
+    /*ajustando o padding para ser mais flexível*/
+    background-color: #ff97ca;
+    width: 100%;
+    /*colocamos a largura para 100% do espaço disponível*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*aqui começamos o posicionamento do header*/
+    position: sticky;
+    /*posicionamento do header usando o stycky fixo, porém distinto do fixed*/
+    top: 0;
+    /*espaçamento superior zerado, fazendo com que o header fique grudado ao top*/
+    left: 0;
+    /*espaçamento e esquerda zerado, fazendo com que o header fique grudado á esquerda*/
+    z-index: 999;
+    /*fixo de profundidade
+    fico carteziado*/
+
+    box-shadow: 0 0.21rem 0.5rem white;
+    /*primeiro valor sombra na direita (0)
+    segundo valor sombra button (0.21rem)
+    terceiro valor feadient da sombra (0.5rem)*/
+}
