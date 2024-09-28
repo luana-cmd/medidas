@@ -5,10 +5,12 @@
     /*garante que o preenchimento/padding seja incluido no cálculo da largura, evitando que o conteúdo ultrapasse a tela*/
 }
 
+
 html {
     width: 100%;
     height: 100vh;
 }
+
 
 header {
     padding: min(5vh, 4rem);
@@ -44,20 +46,117 @@ header i {
     font-size: 6em;
 }
 
+
 header img {
     color: aqua;
     font-size: 1.5rem;
 }
 
+
 header button {
-    width: 1.3rem;
+    width: 13rem;
     height: 1.5rem;
-    background-color: #ff97ca;
+    background-color: #f0b1cf;
     border-radius: 1rem;
     padding: 1.3rem;
     color: antiquewhite;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.section-01 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ebaed4;
+    width: 100%;
+    padding: min(20vh, 6rem);
+}
+
+
+.section-02 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f5cfea;
+    width: 100%;
+    padding: min(20vh, 6rem);
+}
+
+
+
+.div-01 p {
+    font-size: 2em;
+    /*cada em vale 16*/
+    margin: 1.2em;
+}
+
+
+.div-02 img {
+    width: 30rem;
+    margin: 5rem auto;
+    display: block;
+    /*garantindo que a imagem se comporte como um bloco*/
+}
+
+
+footer {
+    background-color: #f0b1cf;
+    width: 100%;
+    padding: min(19vh, 4rem);
+}
+
+
+footer i {
+    color: white;
+    font-size: 3em;
+}
+
+
+@media (max-width:830px) {
+    header i {
+        font-size: 5.5em;
+        z-index: 999;
+    }
+
+    header button {
+        width: 10rem;
+        height: 0.8rem;
+    }
+
+    .section-01 {
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .div-01 p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        text-align: left;
+        padding: 2.3rem;
+        width: 100%;
+        margin: 1em;
+    }
+
+    .div-02 img {
+        width: 10rem;
+        margin: 0.2 auto;
+    }
+
+
+    .section-02 {
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
 }
