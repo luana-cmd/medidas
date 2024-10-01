@@ -87,7 +87,6 @@ header button {
 }
 
 
-
 .div-01 p {
     font-size: 2em;
     /*cada em vale 16*/
@@ -101,6 +100,114 @@ header button {
     display: block;
     /*garantindo que a imagem se comporte como um bloco*/
 }
+
+
+
+.section-03 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #c70894;
+    width: 100%;
+    padding: min(20vh, 6rem);
+    /*ajustando para flexibilidade*/
+}
+
+
+.container { 
+    /*elemento pai das caixas (3 div´s)*/
+    display: flex;
+    /*tornando ele flex; deixando os ngc lado a lado*/
+    justify-content: center; /*justificando os itens na horizontal*/
+    align-items: center; /*justificando */
+    margin-bottom: 10rem;
+    z-index: 1;
+    flex-wrap: wrap;
+    /*as caixas podem quebrar qndo não tiver mais espaço; (nowrap é o contrario disso)*/
+    position: relative;
+    /*flnd q a posiçao dos elementos vai ser relativa com o tamanho da tela*/
+}
+
+
+.card {
+    /*caixa*/
+    width: 200px;
+    /*largura*/
+    height: 200px;
+    /*altura*/
+    margin: 30px;
+    /*margem em volta*/
+    box-shadow: 20px 20px 50px palevioletred;
+    /*sombra*/
+    border-radius: 15px;
+    /*arredondamento da borda*/
+    background-color: #ffd7e34f(233, 167, 223, 0.288);
+}
+
+.content {
+    /*conteúdo*/
+    padding: 20px;
+    /*espaço interno do conteudo*/
+    text-align: center;
+    /*alinhando os conteúdo ao centro*/
+    transform: translateY(50px);
+    opacity: 0.2;
+    /*20% de opacidade*/
+    transition: 0.5s;
+    /*transição*/
+}
+
+.content:hover {
+    opacity: 1;
+    /*100% de visibilidade*/
+    transform: translateY(0px); /*aplicando o retorno do conteúdo */
+}
+
+.content h2 {
+    position: absolute;
+    right: 30px;
+    font-size: 5rem;
+    color: gray (109, 109, 109, 0.5);
+}
+
+.content p {
+    font-size: 0.8em;
+    color: white;
+    font-weight: 300;
+    margin-top: 4rem;
+}
+
+.content a {
+    padding: 8px 20px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: 500;
+    margin-top: 2.7rem;
+    box-shadow: 0 5px 15px black;
+    display: inline-block;
+    position: relative;
+}
+
+
+
+
+.div button {
+    width: 9rem;
+    height: 1rem;
+    background-color: #f0b1cf;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
+}
+
+
+
 
 
 footer {
@@ -149,7 +256,6 @@ footer i {
         width: 10rem;
         margin: 0.2 auto;
     }
-
 
     .section-02 {
         padding: 9rem;
